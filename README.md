@@ -1,5 +1,5 @@
 # Лабораторная работа №1. Создание activity и передача параметров между ними
-_Выполнил:_ Томилинов
+_Выполнил:_ Анохин
 _Язык программирования:_ Java
 
 ## Что делает приложение?
@@ -11,9 +11,7 @@ _Язык программирования:_ Java
 После запуска открывается экран 1 (`MainActivity`) с кнопкой "нажми". По тапу на кнопку ->
 переход на экран 2 (`MainActivity2`)
 передается параметр из `MainActivity` в переменную экрана `MainActivity2`
-отображается текст "Переданный параметр: Томилинов".
-![image_alt](https://github.com/QTEKZ/Lab1Tom/blob/master/лаба1скрин1.PNG?raw=true)
-![image_alt](https://github.com/QTEKZ/Lab1Tom/blob/master/лаба1скрин2.PNG?raw=true)
+отображается текст "Переданный параметр: Анохин".
 
 ### Как передается параметр
 Как только приложение получает сигнал о том, что пользователь нажал на кнопку:
@@ -22,7 +20,7 @@ _Язык программирования:_ Java
 запускается `MainActivity2`
 ``` java
 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-intent.putExtra("surname", "Томилинов");
+intent.putExtra("surname", "Анохин");
 startActivity(intent);
 ```
 
